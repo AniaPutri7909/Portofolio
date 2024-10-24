@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ania Putri Ramadhani - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0; 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #1c1c1c; 
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #bbb; 
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px; 
+            transition: color 0.3s, transform 0.3s;
+            border: 2px solid transparent; 
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            transform: scale(1.1);
+            border-color: #e0e0e0;
+        }
+
+        header, section {
+            padding-top: 60px; /* Pastikan konten tidak tertutup navbar */
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1c1c1c; /* Warna abu-abu gelap */
+            border: 2px solid #e0e0e0; /* Garis tepi neon putih */
+        }
+
+        header h1 {
+            color: white; /* Warna putih untuk judul */
+            font-size: 3rem;
+        }
+
+        header p {
+            color: #bbb; /* Warna abu-abu untuk deskripsi */
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #333; /* Garis pembatas abu-abu gelap */
+            margin: 2rem 0; /* Margin atas dan bawah */
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            border-bottom: 1px solid #333; /* Garis bawah untuk pemisah section */
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 5px #e0e0e0;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0 auto 40px;
+            max-width: 800px;
+        }
+
+        /* What I Like Section */
+        #likes img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #e0e0e0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Achievements Section */
+        #achievements ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #achievements ul li {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        /* Custom Builds Section */
+        .build {
+            text-align: center;
+        }
+
+        .build img {
+            width: 400px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #e0e0e0;
+        }
+
+        .build button {
+            background-color: #e0e0e0;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .build button:hover {
+            background-color: #ccc; /* Ganti warna saat hover */
+        }
+
+        /* Social Media */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 50px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c; /* Warna gelap untuk footer */
+            border-top: 2px solid #333; /* Garis atas footer */
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#likes">Interests</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#custom-builds">Marketplace</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Ania Putri Ramadhani</h1>
+        <p>Gamer, Builder, and Future IT Expert</p>
+    </header>
+
+    <!-- Section About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Ania, a passionate gamer and builder who loves to explore virtual worlds and create amazing things in Minecraft. I'm also a huge fan of competitive games like Valorant, PUBG, Roblox, and more. My goal is to become a skilled programmer and combine my love for gaming with technology.</p>
+    </section>
+
+    <!-- Section What I Like -->
+    <section id="likes">
+        <h2>What I Like?</h2>
+        
+        <h2>Playing A Games</h2>
+        <img src="img/games.jpg" alt="Games Image">
+        <p>Saya suka sekali dengan hal yang berkaitan dengan Permainan Games Online, karena itu bisa menjadi Petualangan dan Sensai baru dalam hiduo.</p>
+        <h2>PCs Building</h2>
+        <img src="img/pc.jpg" alt="PC Build Image">
+        <p>Saya sangat tertarik dengan hal yang berhubungan dengan teknologi seperti pc. Merakit PC, mulai dari memilih komponen terbaik hingga memastikan sistem berjalan optimal itu adalah Pengalaman tersrru dalam hidup, karena bisa belajar sambil meraih Ekspektasi.</p>
+    </section>
+
+    <!-- Section Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Telah membangun lebih dari 100 bangunan custom di Minecraft untuk klien internasional dan Youtuber besar.</li>
+            <li>Menjuarai SpeedRun Minecraft dengan Bangunan Tercepat, Terbesar, dan Termewah.</li>
+            <li>Menjadi bagian dari komunitas game besar di Dunia.</li>
+            <li>Memenangkan beberapa Tournamen Lokal di Game Valorant dan PUBG.</li>
+            <li></li>
+        </ul>
+    </section>
+
+    <!-- Section Custom Builds -->
+    <section id="custom-builds">
+        <h2>Marketplace</h2>
+    <!-- Section Custom Builds -->
+    <section id="custom-builds">
+        <div class="build">
+            <img src="img/builer.jpg" alt="Build 1">
+            <p></p>
+            <button onclick="window.location.href='link-to-more-info-build1.html'">Marketplace</button>
+        </div>
+    </section>
+
+   <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out if you have any questions or inquiries!</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/@aniaygy" target="_blank">
+                <img src="img/ig.png" alt="Instagram">
+            </a>
+            <a href="https://discord.gg/yourdiscordlink" target="_blank">
+                <img src="img/discord.png" alt="Discord">
+            </a>
+            <a href="https://www.youtube.com/@XandoriL" target="_blank">
+                <img src="img/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ania Putri Ramadhani. All rights reserved.</p>
+    </footer>
+</body>
+</html>

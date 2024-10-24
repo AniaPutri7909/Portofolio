@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Warna hitam untuk background */
+    color: #e0e0e0; /* Warna abu-abu terang untuk teks */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #1c1c1c; /* Warna background gelap */
+    padding: 10px 0;
+    position: fixed; /* Tetap di atas ketika scroll */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #333; /* Garis di bawah navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menggunakan flexbox untuk mengatur elemen */
+    justify-content: center; /* Mengatur elemen ke tengah */
+}
+
+nav ul li {
+    margin: 10 30px; /* Jarak antar item navbar */
+}
+
+nav ul li a {
+    color: #bbb; /* Warna abu-abu untuk teks */
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px; /* Menambahkan padding untuk link */
+    transition: color 0.3s, transform 0.3s; /* Transisi untuk warna dan transformasi */
+    border: 2px solid transparent; /* Mulai tanpa garis */
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: white; /* Ganti warna saat hover */
+    transform: scale(1.1); /* Zoom in saat hover */
+    border-color: #00FFFF; /* Garis tepi neon putih (cyan) saat hover */
+}
+
+/* Tambahan padding untuk menghindari tumpang tindih dengan navbar */
+header, section {
+    padding-top: 60px; /* Pastikan konten tidak tertutup navbar */
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1c1c1c; /* Warna abu-abu gelap */
+    border: 2px solid #00FFFF; /* Garis tepi neon putih */
+}
+
+header h1 {
+    color: white; /* Warna putih untuk judul */
+    font-size: 3rem;
+}
+
+header p {
+    color: #bbb; /* Warna abu-abu untuk deskripsi */
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333; /* Garis pembatas abu-abu gelap */
+    margin: 2rem 0;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: white; /* Judul section berwarna putih */
+    font-size: 2rem;
+    border-bottom: 2px solid #00FFFF; /* Garis bawah neon putih untuk judul */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.product {
+    margin: 2rem 0;
+}
+
+.product img {
+    width: 300px; /* Lebar gambar produk yang lebih besar */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid #00FFFF; /* Garis tepi neon putih untuk gambar produk */
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.1); /* Animasi zoom saat gambar di-hover */
+}
+
+.buy-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1c1c1c;
+    color: white;
+    border: 2px solid #00FFFF; /* Border neon putih */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Animasi zoom pada tombol Buy */
+}
+
+.see-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #bbb;
+    border: 2px solid #00FFFF; /* Garis tepi neon putih */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.see-more-btn:hover {
+    background-color: #e0e0e0;
+    color: black; /* Ganti warna teks saat hover */
+    transform: scale(1.1); /* Animasi zoom pada tombol See More */
+}
+
+.review {
+    margin: 1rem 0;
+    font-style: italic;
+    color: #ccc; /* Warna teks abu-abu terang */
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+    border: 2px solid #00FFFF; /* Garis tepi neon putih untuk ikon */
+    border-radius: 50%;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Animasi zoom saat ikon di-hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar kecil */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Jarak antar item navbar di kolom */
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* Mengurangi ukuran font pada layar kecil */
+    }
+
+    .product img {
+        width: 100%; /* Gambar produk menyesuaikan lebar pada layar kecil */
+        max-width: 300px; /* Batas maksimum lebar gambar */
+    }
+
+    .social-media img {
+        width: 30px; /* Mengurangi ukuran ikon sosial media pada layar kecil */
+    }
+}
+
+/* Styles for Logo Kanan */
+.logo.kanan {
+    width: 50px; /* Mengatur ukuran logo kanan */
+    height: auto; /* Membuat tinggi otomatis agar proporsional */
+    border: 2px solid #00FFFF; /* Garis tepi neon putih untuk logo */
+    border-radius: 5px;
+}
